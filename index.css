@@ -1,0 +1,243 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 0;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    color: #95e1d3;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0;
+
+}
+
+.navigation {
+    display: flex;
+}
+
+.nav_link > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #95e1d3;
+    transition: 0.2s;
+}
+
+.nav_link > a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    color: #f38181;
+}
+
+.nav_link:not(:last-child) {
+    margin-right: 60px;
+}
+
+
+.service{
+    margin-top: 60px;
+}
+
+.pre_title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.services_cards {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 45px auto; 
+}
+
+.services_wrapper {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+
+.description_direction {
+    margin-left: 30px;
+}
+
+.direction {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.text_direction {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #999999;
+}
+
+
+/*  ++++++++++++++ TEAM ++++++++++++++  */
+
+
+.card {
+
+}
+
+
+.text_team {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.team_cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_background {
+    background-color: #95e1d3;
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img_men {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.card_img {
+    display: block;
+    position: relative;
+    width: 380px;
+    height: 470px;
+}
+
+.name {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.prof{
+    font-family: 'Roboto';
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+/* overlay */
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380PX;
+    height: 470PX;
+    background: linear-gradient(#f38181, #fce38a);
+    transition: 0.25s;
+}
+
+
+/* social icons */
+
+.icon_link {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #fce38a;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    margin: 0 1px;
+    transition: 0.25s;
+}
+
+.social_icons {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.25s;
+}
+
+.icon_link:hover {
+    background-color: #95e1d3;
+}
+
+/* .card:hover .social_icons {
+    opacity: 1;
+} */
+
+.card_img:hover .social_icons {
+    opacity: 1;
+}
+
+.card_img:hover .overlay{
+    opacity: 0.8;
+    top: -10px;
+    left: -10px;
+} 
+
+.card_img:hover .img_men {
+    left: -10px;
+    top: -10px;
+}
