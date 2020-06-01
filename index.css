@@ -120,8 +120,9 @@ body {
 /*  ++++++++++++++ TEAM ++++++++++++++  */
 
 
-.card {
-
+.team {
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 
@@ -166,6 +167,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
@@ -173,6 +176,7 @@ body {
     font-family: 'Roboto';
     font-weight: lighter;
     text-align: center;
+    color: #999999;
 }
 
 
@@ -188,7 +192,7 @@ body {
     align-items: center;
     width: 380PX;
     height: 470PX;
-    background: linear-gradient(#f38181, #fce38a);
+    background-image: linear-gradient(#f38181, #fce38a);
     transition: 0.25s;
 }
 
@@ -240,4 +244,56 @@ body {
 .card_img:hover .img_men {
     left: -10px;
     top: -10px;
+}
+
+.footer {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_text{
+    font-size: 14px;
+
+}
+
+.last_world{
+    color: #f38181;
+}
+
+form{
+    font-size: 0;
+}
+
+input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    margin: 0;
+
+}
+
+input::placeholder {
+    padding-left: 5px;
+    color: #e5e5e5;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+.btn_footer{
+    height: 40px;
+    width: 150px;
+    background-color: #95e1d3;
+    color: #fff;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 1.2;
 }
